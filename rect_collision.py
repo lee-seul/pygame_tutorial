@@ -34,11 +34,13 @@ class Player(object):
                 if dy < 0:
                     self.rect.top = wall.rect.bottom
 
+
 class Wall(object):
     
     def __init__(self, pos):
         walls.append(self)
         self.rect = pygame.Rect(pos[0], pos[1], 16, 16)
+
 
 
 os.environ["SDL_VIDEO_CENTERED"] = "1"
